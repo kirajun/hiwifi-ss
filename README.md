@@ -1,4 +1,11 @@
 # hiwifi-ss
+将在 @qiwihui 的基础上增加个人定制功能。
+
+## TODO List
+- [ ] 增加源IP白名单，名单中的IP地址将不走ss
+- [ ] 增加UDP支持，将UDPinTCP改为UDPinUDP
+- [ ] 增加GFWList模式
+- [ ] 增加多节点ss服务器支持
 
 极路由+ss配置, 适应新版极路由，支持的极路由版本有(__因为没办法测试所有的极路由，所以你能运行的极路由不在这个列表，请在[issue#38](https://github.com/qiwihui/hiwifi-ss/issues/38)中回复，谢谢！__):
 
