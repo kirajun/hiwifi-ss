@@ -33,7 +33,7 @@ rs_iptables_add() {
 	iptables -t nat -A $appname -d $wanip/24 -j RETURN
 	iptables -t nat -A $appname -d $server_ip/32 -j RETURN
 	
-	iptables -t nat -A $appname -s sip -j RETURN
+	iptables -t nat -A $appname -m salist --salist white --match-sip -j RETURN
 	
 	[ "$mode" != "1" ] && {
 		iptables -t nat -A $appname -m salist --salist china --match-dip -j RETURN
